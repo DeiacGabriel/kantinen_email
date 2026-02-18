@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weekly Menu Overview</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+        <script id="tailwind-config">
+            tailwind.config = {
+                darkMode: "class",
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: "#13ec5b",
+                            "background-light": "#f6f8f6",
+                            "background-dark": "#102216",
+                        },
+                        fontFamily: {
+                            display: ["Inter", "sans-serif"],
+                        },
+                        borderRadius: {
+                            DEFAULT: "0.25rem",
+                            lg: "0.5rem",
+                            xl: "0.75rem",
+                            full: "9999px",
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            body {
+                font-family: 'Inter', sans-serif;
+                min-height: max(884px, 100dvh);
+            }
+            .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            }
+            .fill-icon {
+                font-variation-settings: 'FILL' 1;
+            }
+        </style>
+    </head>
+    <body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 min-h-screen flex justify-center">
+        <!-- Mobile Container (Simulating iOS) -->
+        <div class="w-full max-w-md bg-white dark:bg-[#152a1c] min-h-screen flex flex-col shadow-xl overflow-hidden relative">
+            <!-- Header Section -->
+            <header class="pt-10 pb-6 px-6 bg-gradient-to-b from-primary/10 to-transparent">
+                <div class="flex justify-between items-start mb-4">
+                    <div>
+                        <p class="text-primary font-semibold text-sm uppercase tracking-wider">Weekly Reminder</p>
+                        <h1 class="text-3xl font-extrabold text-slate-900 dark:text-white leading-tight">Weekly Menu Overview</h1>
+                    </div>
+                    <div class="bg-primary/20 p-2 rounded-xl">
+                        <span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 text-slate-500 dark:text-slate-400">
+                    <span class="material-symbols-outlined text-base">calendar_month</span>
+                    <p class="text-sm font-medium">Monday, Oct 23 - Friday, Oct 27</p>
+                </div>
+            </header>
+            <!-- Main Content -->
+            <main class="flex-1 px-6 pb-24">
+                <!-- Daily List -->
+                <div class="space-y-4">
+                    <!-- Monday -->
+                    <div class="flex items-center gap-4 p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                        <div class="relative w-16 h-16 shrink-0 overflow-hidden rounded-lg shadow-sm">
+                            <img alt="Quinoa Salad" class="w-full h-full object-cover" data-alt="Fresh quinoa salad with roasted colorful vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6DJ5XDWfpMKfvabB0U6CHUSEsawIdenHLs7EU9hVad7NfLb0O_vbrbXIWhYhrUPwoEslXcMh4qfQDy9khYyjiXmV9m_pqOmH00R_XSBeO_ldnrK-QzO5gxnk32KoEkeOQv9bwJa-xYpmX1q8DELP85DCYmnZNXXJvbf1xjuVMittgQJ18xA2c3ogXoV8P4JpbBo6ji-gPDmEmygjfkYfgwUJT4vQkxofWs9lFeZWNi9SIXJlQt7WpkE-tybthTSkUBIx6JbrXnAPH" />
+                            <div class="absolute top-0 left-0 bg-primary px-1.5 py-0.5 rounded-br-lg">
+                                <span class="text-[10px] font-bold text-slate-900 uppercase">Mon</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-bold text-slate-900 dark:text-white truncate">Quinoa Garden Salad</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">Roasted seasonal vegetables and lemon dressing</p>
+                        </div>
+                        <span class="material-symbols-outlined text-slate-300">chevron_right</span>
+                    </div>
+                    <!-- Tuesday -->
+                    <div class="flex items-center gap-4 p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                        <div class="relative w-16 h-16 shrink-0 overflow-hidden rounded-lg shadow-sm">
+                            <img alt="Beef Burger" class="w-full h-full object-cover" data-alt="Juicy beef burger with cheese and fries" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABsnprTK1-ocW9wVI0aw0l1a2QPqNGwa5iXSYVrmA9eSkXUvypiHy831vb_IvPJCmHWLiBSbBlBf1YRZcVmBHKWAH6JIIufq4jL-eSDzwbK7vwvzJb7oehRQJV8NY7U2Y3L2a6vwAXDsg9R_uXkwWskceJ7fdii1AXmFM6cCmMt-3JM7bG3uyrZjy3awfmod8o_wEy68PVkNiEir8-7sVc1Pq_SI6dAc8xo8oym1R2rChhwZBiZVOkm1T6aySDM1ab5mLQYuuSNOXH" />
+                            <div class="absolute top-0 left-0 bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 rounded-br-lg">
+                                <span class="text-[10px] font-bold text-slate-600 dark:text-slate-300 uppercase">Tue</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-bold text-slate-900 dark:text-white truncate">Truffle Beef Burger</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">Brioche bun, wagyu patty, and truffle mayo</p>
+                        </div>
+                        <span class="material-symbols-outlined text-slate-300">chevron_right</span>
+                    </div>
+                    <!-- Wednesday -->
+                    <div class="flex items-center gap-4 p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                        <div class="relative w-16 h-16 shrink-0 overflow-hidden rounded-lg shadow-sm">
+                            <img alt="Green Curry" class="w-full h-full object-cover" data-alt="Thai green curry with jasmine rice" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDnN-fmyqlhGpnG_KHVaO6h6gThbYIZb4cEwxowLMElatxSxGjv_Tk4DRZhdpSOkrv5PetsneshjtaSetQFI3J6c7s2VyOnD4BRMHp9GzeyUb9wjmODnftFOItP0whWsHkTpi4e72hbqiolMekeyniv0Zgtxf6Li-DkJpvwqB6AnUFldoaYcMlNBAp0k0Ra0rMs5gi_KStOpONQiG3WmQhwCQeyJXrJYFE-lbDHd7oznfzhuLMOaWQXU6YdrOEA9nes1wfjJG3S-uvP" />
+                            <div class="absolute top-0 left-0 bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 rounded-br-lg">
+                                <span class="text-[10px] font-bold text-slate-600 dark:text-slate-300 uppercase">Wed</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <div class="flex items-center gap-2">
+                                <h3 class="font-bold text-slate-900 dark:text-white truncate">Thai Green Curry</h3>
+                                <span class="bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-300 text-[8px] px-1 rounded font-bold uppercase">Vegan</span>
+                            </div>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">Spicy coconut base with tofu and bamboo shoots</p>
+                        </div>
+                        <span class="material-symbols-outlined text-slate-300">chevron_right</span>
+                    </div>
+                    <!-- Thursday -->
+                    <div class="flex items-center gap-4 p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                        <div class="relative w-16 h-16 shrink-0 overflow-hidden rounded-lg shadow-sm">
+                            <img alt="Grilled Salmon" class="w-full h-full object-cover" data-alt="Grilled salmon fillet with green asparagus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_wL5g0ovyliFv5WXwCOEivVH-Womn-8Gwj04WgXe7-xJ3dnJnNxRuMMqUtH2LSahw424dPvxy88i25C5BSirJGUZKriwHKwhgWqvMJ4Qewsel5w8kJLVbDNHXjLmJdA8lSnz-66W-VhUmGxY88_-AMfTw_ibTjyp4nG-hcRXd5PX_Aa0DUUNggnjsI7b3_47M1bAji1c3Lq3NRcUVrb85J7c5gtmC3jBBE4_5iiay4sQ8h_0oyGo-CiC0gRNQeR8Ty_suxKEleWo9" />
+                            <div class="absolute top-0 left-0 bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 rounded-br-lg">
+                                <span class="text-[10px] font-bold text-slate-600 dark:text-slate-300 uppercase">Thu</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-bold text-slate-900 dark:text-white truncate">Salmon &amp; Asparagus</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">Atlantic salmon with honey-mustard glaze</p>
+                        </div>
+                        <span class="material-symbols-outlined text-slate-300">chevron_right</span>
+                    </div>
+                    <!-- Friday -->
+                    <div class="flex items-center gap-4 p-3 bg-slate-50 dark:bg-slate-800/50 rounded-xl border border-slate-100 dark:border-slate-700">
+                        <div class="relative w-16 h-16 shrink-0 overflow-hidden rounded-lg shadow-sm">
+                            <img alt="Fish and Chips" class="w-full h-full object-cover" data-alt="Crispy battered fish and chunky chips" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8-mfwtytYCT5yoEC_HxsED7Ge4rx0pvmJNyxpsQgtqbZkvNhUgdPggIyURHTI00UFVeye3LZzgZXX-UZaRdVAjmVnebKo4SZ8YItZ1OUAjwyeAuw1DVCrVqP-mUw6zhoHkOoQQd0vKLxnC5wpXNCo-m4M3kLMhXwnQpOlrxL151H1k4Sd4GAzk8Fv0LB-VsGItw0cek1QbVqvQQN7Aaks_JYci7f2W9kZBOJ_jaamYADiuapoMczSP4nm4Nia6o-P0Vd__kb6K6rN" />
+                            <div class="absolute top-0 left-0 bg-slate-200 dark:bg-slate-700 px-1.5 py-0.5 rounded-br-lg">
+                                <span class="text-[10px] font-bold text-slate-600 dark:text-slate-300 uppercase">Fri</span>
+                            </div>
+                        </div>
+                        <div class="flex-1 min-w-0">
+                            <h3 class="font-bold text-slate-900 dark:text-white truncate">Fish &amp; Chips Friday</h3>
+                            <p class="text-xs text-slate-500 dark:text-slate-400 line-clamp-1">Classic beer-battered cod with mushy peas</p>
+                        </div>
+                        <span class="material-symbols-outlined text-slate-300">chevron_right</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
